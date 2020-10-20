@@ -164,8 +164,8 @@
         <artifactId>dependency-check-maven</artifactId>
         <version>6.0.2</version>
         <configuration>
-            <cveUrlModified>http://internal-mirror.mycorp.com/nvdcve-1.0-modified.json.gz</cveUrlModified>
-            <cveUrlBase>http://internal-mirror.mycorp.com/nvdcve-1.0-%d.json.gz</cveUrlBase>
+            <cveUrlModified>https://github.com/stevespringett/nist-data-mirror</cveUrlModified>
+            <cveUrlBase>https://github.com/stevespringett/nist-data-mirror</cveUrlBase>
         </configuration>
         <executions>
             <execution>
