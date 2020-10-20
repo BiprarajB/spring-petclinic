@@ -159,24 +159,6 @@
         </executions>
       </plugin>
       <!-- owasp-dependency - added by KZN -->
-     <!-- <plugin>
-          <groupId>org.owasp</groupId>
-          <artifactId>dependency-check-maven</artifactId>
-          <version>5.0.0-M2</version>
-          <configuration>
-              <!-- <failBuildOnCVSS>8</failBuildOnCVSS> -->
-              <!-- <format>ALL</format>
-              <skipProvidedScope>true</skipProvidedScope>
-              <skipRuntimeScope>true</skipRuntimeScope>
-          </configuration>       
-          <executions>
-              <execution>
-                  <goals>
-                      <goal>check</goal>
-                  </goals>
-              </execution>
-          </executions>
-      </plugin> --> 
       <plugin>
         <groupId>org.owasp</groupId>
         <artifactId>dependency-check-maven</artifactId>
