@@ -159,13 +159,13 @@
         </executions>
       </plugin>
       <!-- owasp-dependency - added by KZN -->
-      <plugin>
+     <!-- <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
           <version>5.0.0-M2</version>
           <configuration>
               <!-- <failBuildOnCVSS>8</failBuildOnCVSS> -->
-              <format>ALL</format>
+              <!-- <format>ALL</format>
               <skipProvidedScope>true</skipProvidedScope>
               <skipRuntimeScope>true</skipRuntimeScope>
           </configuration>       
@@ -176,7 +176,23 @@
                   </goals>
               </execution>
           </executions>
-      </plugin>      
+      </plugin> --> 
+      <plugin>
+        <groupId>org.owasp</groupId>
+        <artifactId>dependency-check-maven</artifactId>
+        <version>6.0.2</version>
+        <configuration>
+            <cveUrlModified>http://internal-mirror.mycorp.com/nvdcve-1.0-modified.json.gz</cveUrlModified>
+            <cveUrlBase>http://internal-mirror.mycorp.com/nvdcve-1.0-%d.json.gz</cveUrlBase>
+        </configuration>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>check</goal>
+                </goals>
+            </execution>
+        </executions>
+      </plugin>
       <!-- owasp-dependency - added by KZN -->
       <plugin>
         <groupId>org.jacoco</groupId>
