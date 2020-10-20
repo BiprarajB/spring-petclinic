@@ -160,21 +160,23 @@
       </plugin>
       <!-- owasp-dependency - added by KZN -->
       <plugin>
-        <groupId>org.owasp</groupId>
-        <artifactId>dependency-check-maven</artifactId>
-        <version>6.0.2</version>
-        <configuration>
-            <cveUrlModified>https://github.com/stevespringett/nist-data-mirror</cveUrlModified>
-            <cveUrlBase>https://github.com/stevespringett/nist-data-mirror</cveUrlBase>
-        </configuration>
-        <executions>
-            <execution>
-                <goals>
-                    <goal>check</goal>
-                </goals>
-            </execution>
-        </executions>
-      </plugin>
+          <groupId>org.owasp</groupId>
+          <artifactId>dependency-check-maven</artifactId>
+          <version>4.0.2</version>
+          <configuration>
+              <!-- <failBuildOnCVSS>8</failBuildOnCVSS> -->
+              <format>ALL</format>
+              <skipProvidedScope>true</skipProvidedScope>
+              <skipRuntimeScope>true</skipRuntimeScope>
+          </configuration>       
+          <executions>
+              <execution>
+                  <goals>
+                      <goal>check</goal>
+                  </goals>
+              </execution>
+          </executions>
+      </plugin>      
       <!-- owasp-dependency - added by KZN -->
       <plugin>
         <groupId>org.jacoco</groupId>
